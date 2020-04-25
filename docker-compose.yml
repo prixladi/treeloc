@@ -1,0 +1,42 @@
+version: '3.4'
+
+services:
+  api:
+    image: treeloc/backend-api
+    ports:
+      - 8080:80
+    environment:
+      MONGO_URL: "mongodb://mongodb:27017"
+      MONGO_DATABASE_NAME: "TreeLoc"
+
+  loader:
+    image: treeloc/backend-loader
+    ports:
+      - 8081:80
+    environment:
+      MONGO_URL: "mongodb://mongodb:27017"
+      MONGO_DATABASE_NAME: "TreeLoc"
+      LOADER_DELAY: "20"
+      DISCOVERY_DELAY: "20"
+      DISCOVERY_URL: "https://raw.githubusercontent.com/prixladi/treeloc-data/master/Discovery.csv"
+
+  frontend:
+    image: treeloc/frontend
+    ports:
+      - "80:80"
+    environment:
+        API_URL: "http://localhost:8080/api/v1"
+        SIGNAL_URL: "http://localhost:8081/signalr"
+
+  mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_DATA_DIR: "/data/db"
+      MONGO_LOG_DIR: "/dev/null"
+    volumes:
+      - mongodata:/data/db
+    ports:
+      - 27017:27017
+
+volumes:
+  mongodata:
