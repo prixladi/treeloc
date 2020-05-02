@@ -10,9 +10,9 @@ Backend aplikace se nachází zde [Treeloc Backend](https://github.com/prixladi/
 
 ## Docker (docker-compose)
 
-Spuštění projektu pomocí `docker-compose up`
+Stažení nových imagů pomocí `docker-compose pull`
 
-Vytvoření nových imagů a spuštění projektu pomocí `docker-compose up --build`
+Spuštění projektu pomocí `docker-compose up`
 
 ---
 
