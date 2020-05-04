@@ -5,6 +5,9 @@ Frontend aplikace se nachází zde [Treeloc Frontend](https://github.com/prixlad
 
 Backend aplikace se nachází zde [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
 
+# Demo aplikace
+
+Demo aplikace běží na https://treeloc.azurewebsites.net/.
 
 # Spuštění projektu
 
