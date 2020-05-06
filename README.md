@@ -5,14 +5,17 @@ Frontend aplikace se nachází zde [Treeloc Frontend](https://github.com/prixlad
 
 Backend aplikace se nachází zde [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
 
+# Demo aplikace
+
+Demo aplikace běží na https://treeloc.azurewebsites.net/.
 
 # Spuštění projektu
 
 ## Docker (docker-compose)
 
-Spuštění projektu pomocí `docker-compose up`
+Stažení nových imagů pomocí `docker-compose pull`
 
-Vytvoření nových imagů a spuštění projektu pomocí `docker-compose up --build`
+Spuštění projektu pomocí `docker-compose up`
 
 ---
 
