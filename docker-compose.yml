@@ -19,7 +19,8 @@ services:
       LOADER_INTERVAL: "20"
       DISCOVERY_INTERVAL: "20"
       DISCOVERY_URL: "https://raw.githubusercontent.com/prixladi/treeloc-data/master/Discovery.csv"
-
+      REMOVE_OLD: "true"
+      
   frontend:
     image: treeloc/frontend
     ports:
