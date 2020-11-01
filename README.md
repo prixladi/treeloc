@@ -1,78 +1,77 @@
 # Treeloc
 
-Aplikace pro podporu otevírání dat o dřevinách pomocí [OFN](https://opendata.gov.cz/otev%C5%99en%C3%A9-form%C3%A1ln%C3%AD-normy:start).
 
-Aplikace vznikla v rámci [Baklářské práce](https://dspace.cvut.cz/handle/10467/88708). 
+Application to support data opening
+about woody plants using an open formal
+standard. [OFN](https://opendata.gov.cz/otev%C5%99en%C3%A9-form%C3%A1ln%C3%AD-normy:start).
 
-Frontend aplikace - [Treeloc Frontend](https://github.com/prixladi/treeloc-frontend).
+The application was created during the fulfillment of the  [bachelor's thesis](https://dspace.cvut.cz/handle/10467/88708). 
 
-Backend aplikace - [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
+Application frontend - [Treeloc Frontend](https://github.com/prixladi/treeloc-frontend).
 
-# Demo aplikace
+Application backend - [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
 
-Demo aplikace běží na https://treeloc.azurewebsites.net/.
-
-# Spuštění projektu
+# Launching the project
 
 ## Docker (docker-compose)
 
-Stažení nových imagů pomocí `docker-compose pull`
+Download new images using `docker-compose pull`
 
-Spuštění projektu pomocí `docker-compose up`
+Start the project using `docker-compose up`
 
 ---
 
 ### Frontend 
 
-Služba poběží na portu **80**.
+Frontend service should be running on port **80**.
 
 ---
 
 ### Api
 
-Služba poběží na portu **4545**.
+Api service should be running on port **4545**.
 
 ---
 ### Loader
 
-Služba poběží na portu **4546**.
+Loader service should be running on port **4546**.
 
 ---
 
 ### MongoDb
 
-Kontejner s databází poběží na portu **27017**.
+MongoDb container should be running on port **27017**.
 
 ---
 
-Mapování portů pro všechny služby se dá změnit v souboru **./docker-compose.yml**.
+Port mapping for all service can be changed in the **./docker-compose.yml**.
 
-[Dokumentace docker-compose.](https://docs.docker.com/compose/)
+[docker-compose documentation.](https://docs.docker.com/compose/)
 
 # Proměnné prostředí
-Proměnné prostředí se dají změnit v souboru **./docker-compose.yml**.
+Environment variables can be changed in the **./docker-compose.yml**.
 
 ## Api service
 
-|Název|Povinná|Popis|
+|Name|Optional|Description|
 |---|---|---|
-|MONGO_URL|ano|Adresa Mongo databáze|
-|MONGO_DATABASE_NAME|ano|Název Mongo databáze|
+|MONGO_URL|no|MongoDB address|
+|MONGO_DATABASE_NAME|no|MongoDB Database name|
 
 ## Loader service
 
-|Název|Povinná|Popis|
+|Name|Optional|Description|
 |---|---|---|
-|MONGO_URL|ano|Adresa Mongo databáze|
-|MONGO_DATABASE_NAME|ano|Název Mongo databáze|
-|LOADER_INTERVAL|ano|Interval stahovaní datasetů ve vteřinách|
-|DISCOVERY_INTERVAL|ano|Interval volání DISCOVERY_URL ve vteřinách|
-|DISCOVERY_URL|ano|Adresa která vrací adresy datasetů|
-|REMOVE_OLD|ano|Příznak true/false zda se po spuštění mají smazat všechna data|
+|MONGO_URL|no|MongoDB address|
+|MONGO_DATABASE_NAME|no|MongoDB Database name|
+|LOADER_INTERVAL|no|Dataset download interval \[s\]|
+|DISCOVERY_INTERVAL|no|DISCOVERY_URL call interval \[s\]|
+|DISCOVERY_URL|no|Address of discovery endpoint|
+|REMOVE_OLD|no|Flag true/false whether to clear all data after start|
 
 ## Frontend
 
-|Název|Povinná|Popis|
+|Name|Optional|Description|
 |---|---|---|
-|API_URL|ano|Adresa **Api** služby|
-|LOADER_URL|ano|Adresa **Loader** služby|
+|API_URL|ano| **Api** Service address|
+|LOADER_URL|ano| **Loader** Service address|
