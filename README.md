@@ -2,7 +2,7 @@
 
 Aplikace pro podporu otevírání dat o dřevinách pomocí [OFN](https://opendata.gov.cz/otev%C5%99en%C3%A9-form%C3%A1ln%C3%AD-normy:start).
 
-Aplikace vznikla v rámci [Baklářské práce](https://dspace.cvut.cz/handle/10467/88708) 
+Aplikace vznikla v rámci [Baklářské práce](https://dspace.cvut.cz/handle/10467/88708). 
 
 Frontend aplikace - [Treeloc Frontend](https://github.com/prixladi/treeloc-frontend).
 
