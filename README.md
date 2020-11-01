@@ -48,7 +48,7 @@ Port mapping for all service can be changed in the **./docker-compose.yml**.
 
 [docker-compose documentation.](https://docs.docker.com/compose/)
 
-# Proměnné prostředí
+# Environment variables
 Environment variables can be changed in the **./docker-compose.yml**.
 
 ## Api service
