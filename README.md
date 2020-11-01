@@ -73,5 +73,5 @@ Environment variables can be changed in the **./docker-compose.yml**.
 
 |Name|Optional|Description|
 |---|---|---|
-|API_URL|ano| **Api** Service address|
-|LOADER_URL|ano| **Loader** Service address|
+|API_URL|no| **Api** Service address|
+|LOADER_URL|no| **Loader** Service address|
