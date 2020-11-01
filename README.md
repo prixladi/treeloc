@@ -44,12 +44,12 @@ MongoDb container should be running on port **27017**.
 
 ---
 
-Port mapping for all service can be changed in the **./docker-compose.yml**.
+Port mapping for all services can be changed in the **./docker-compose.yml**.
 
 [docker-compose documentation.](https://docs.docker.com/compose/)
 
 # Environment variables
-Environment variables can be changed in the **./docker-compose.yml**.
+Environment variables can be changed in the **./docker-compose.yml** file.
 
 ## Api service
 
