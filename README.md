@@ -1,9 +1,12 @@
 # Treeloc
 
-Frontend aplikace se nachází zde [Treeloc Frontend](https://github.com/prixladi/treeloc-frontend).
+Aplikace pro podporu otevírání dat o dřevinách pomocí [OFN](https://opendata.gov.cz/otev%C5%99en%C3%A9-form%C3%A1ln%C3%AD-normy:start).
 
+Aplikace vznikla v rámci [Baklářské práce](https://dspace.cvut.cz/handle/10467/88708) 
 
-Backend aplikace se nachází zde [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
+Frontend aplikace - [Treeloc Frontend](https://github.com/prixladi/treeloc-frontend).
+
+Backend aplikace - [Treeloc Backend](https://github.com/prixladi/treeloc-backend).
 
 # Demo aplikace
 
